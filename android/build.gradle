@@ -1,11 +1,14 @@
 
 buildscript {
     repositories {
+        google()
+        mavenLocal()
+        mavenCentral()
         jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath('com.android.tools.build:gradle:3.5.2')
     }
 }
 
@@ -31,7 +34,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:+'
-    compile 'com.treasuredata:td-android-sdk:0.1.16'
+    implementation 'com.facebook.react:react-native:+'
+    implementation 'com.treasuredata:td-android-sdk:0.3.0'
 }
   
